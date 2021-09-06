@@ -1,2 +1,2 @@
 # react-custom-hooks
-react custome hooks module
+react custom hooks module
