@@ -1,0 +1,31 @@
+{
+  "name": "react-custom-hooks",
+  "version": "0.0.1",
+  "description": "react custome hooks module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gusrb3164/react-custom-hooks.git"
+  },
+  "keywords": [
+    "react",
+    "custom",
+    "hooks"
+  ],
+  "author": {
+    "name": "Hyeon Gyu Kim",
+    "email": "gusrb3164@gmail.com",
+    "url": "https://github.com/gusrb3164"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gusrb3164/react-custom-hooks/issues"
+  },
+  "homepage": "https://github.com/gusrb3164/react-custom-hooks#readme",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}
