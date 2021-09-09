@@ -16,7 +16,7 @@ const config: Configuration = {
     },
   },
   entry: {
-    app: './src/index.ts',
+    index: './src/index.ts',
   },
   module: {
     rules: [

@@ -1,9 +1,9 @@
 {
-  "name": "react-custom-hooks",
-  "version": "0.0.1",
-  "description": "react custome hooks module",
-  "main": "dist/app.js",
-  "types": "dist/app.d.ts",
+  "name": "custom-hooks-library",
+  "version": "0.0.3",
+  "description": "react custom hooks library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "TS_NODE_PROJECT=\"tsconfig.json\" webpack",
     "build:types": "tsc --emitDeclarationOnly"
