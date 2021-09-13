@@ -1,6 +1,6 @@
 {
   "name": "custom-hooks-library",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "react custom hooks library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -47,8 +47,6 @@
     "eslint-plugin-react": "^7.24.0",
     "fork-ts-checker-webpack-plugin": "^6.3.3",
     "prettier": "^2.3.2",
-    "ts-loader": "^9.2.5",
-    "ts-node": "^10.1.0",
     "typescript": "^4.3.5",
     "webpack": "^5.46.0",
     "webpack-bundle-analyzer": "^4.4.2",
