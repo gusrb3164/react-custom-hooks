@@ -15,6 +15,8 @@ npm install custom-hooks-library
 use onChange Input state
 
 ```tsx
+import { useInput } from 'custom-hooks-library';
+
 const Login = () => {
   // return [state, onChangeCallback, setState]
   const [email, onChangeEmail, setEmail] = useInput('');
@@ -32,6 +34,8 @@ const Login = () => {
 Instead of declaring each React.useCallback function to set true and set false the boolean state(ex: modal), you can get the declared useCallback function.
 
 ```tsx
+import { useBooleanState } from 'custom-hooks-library';
+
 const Modal = () => {
   // return [state, onChangeCallback, setState]
   const [open, setOpen] = useState(false);
@@ -47,10 +51,36 @@ const Modal = () => {
 If you develop infinite scrolling or lazy loading through React.useRef, you can easliy use intersection observer state. Observe from the time the rendering is completed(useEffect with empty deps).
 
 ```tsx
+import { useIntersectingState } from 'custom-hooks-library';
+
 const List = () => {
   const ref = useRef();
   const isIntersecting = useIntersectingState(ref);
 
   return <div ref={ref}>...</div>;
+};
+```
+
+## useLocalStorage
+
+You can use localStorage value like react state.
+
+```tsx
+import { useLocalStorage } from 'custom-hooks-library';
+
+const Storage = () => {
+  const { value, setStorage, removeStorage } = useLocalStorage('token');
+
+  useEffect(() => {
+    if (!value) {
+      setStorage('sample'); // execute localStorage.setItem('token','sample')
+    }
+  }, [value]);
+
+  const onClickRemove = () => {
+    removeStorage(); // execute localStorage.removeItem('token')
+  };
+
+  return <div>{value}</div>;
 };
 ```
