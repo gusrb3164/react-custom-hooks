@@ -5,9 +5,6 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx']; // 어떤 확장자를 처리 할 지 정함
 
-// babel-preset-react-app를 사용한다면 BABEL_ENV를 필수로 설정해야함.
-process.env.BABEL_ENV = 'production';
-
 export default {
   input: './src/index.ts', // 어떤 파일부터 불러올지 정함.
   plugins: [
