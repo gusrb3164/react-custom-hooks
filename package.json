@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "TS_NODE_PROJECT=\"tsconfig.json\" webpack",
+    "build": "rollup -c rollup.config.js",
     "build:types": "tsc --emitDeclarationOnly"
   },
   "repository": {
@@ -27,30 +27,17 @@
     "url": "https://github.com/gusrb3164/react-custom-hooks/issues"
   },
   "homepage": "https://github.com/gusrb3164/react-custom-hooks#readme",
-  "dependencies": {
-    "react": "^17.0.2"
+  "peerDependencies": {
+    "react": "^16.12.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@babel/preset-typescript": "^7.15.0",
-    "@types/react": "^17.0.20",
-    "@types/webpack": "^5.28.0",
-    "@types/webpack-bundle-analyzer": "^4.4.1",
-    "babel-loader": "^8.2.2",
-    "eslint": "^7.31.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-config-react-app": "^6.0.0",
-    "eslint-plugin-flowtype": "^5.8.1",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.24.0",
-    "fork-ts-checker-webpack-plugin": "^6.3.3",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@types/react": "^17.0.24",
     "prettier": "^2.3.2",
-    "typescript": "^4.3.5",
-    "webpack": "^5.46.0",
-    "webpack-bundle-analyzer": "^4.4.2",
-    "webpack-cli": "^4.8.0"
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "typescript": "^4.3.5"
   },
   "files": [
     "dist"
