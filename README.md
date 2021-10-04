@@ -84,3 +84,27 @@ const Storage = () => {
   return <div>{value}</div>;
 };
 ```
+
+## useAuth
+
+It is used on pages that require authentication. After initial rendering, the fetcher function is executed to return the data or error object.
+
+```tsx
+import { useAuth } from 'custom-hooks-library';
+import fetcher from 'any-async-fetcher';
+
+interface IUserInfo {
+  name: string;
+}
+
+const Main = () => {
+  const { data, error } = useAuth<IUserInfo>(fetcher);
+
+  if (error) {
+    // redirect login page
+    return null;
+  }
+
+  return <h1>hello, {data?.name}</h1>;
+};
+```
