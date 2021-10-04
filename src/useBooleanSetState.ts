@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import { useCallback } from 'react';
 
 const useBooleanSetState = (setState: React.Dispatch<boolean>): [() => void, () => void] => {
   const setTrueState = useCallback(() => {
