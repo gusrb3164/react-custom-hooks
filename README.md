@@ -108,3 +108,17 @@ const Main = () => {
   return <h1>hello, {data?.name}</h1>;
 };
 ```
+
+## useToggle
+
+Simple boolean state toggle hook
+
+```tsx
+import { useToggle } from 'custom-hooks-library';
+
+const CheckBox = () => {
+  const [state, toggle] = useToggle(false);
+
+  return <input type="checkbox" onClick={toggle} checked={state} />;
+};
+```
