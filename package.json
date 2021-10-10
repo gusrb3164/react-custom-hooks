@@ -1,6 +1,6 @@
 {
   "name": "custom-hooks-library",
-  "version": "0.1.2",
+  "version": "0.3.0",
   "description": "react custom hooks library",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
