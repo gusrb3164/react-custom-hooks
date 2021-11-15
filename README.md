@@ -122,3 +122,18 @@ const CheckBox = () => {
   return <input type="checkbox" onClick={toggle} checked={state} />;
 };
 ```
+
+## useScrollLock
+
+When Modal opened, this hook locks background scroll.
+
+```tsx
+import { useScrollLock } from 'custom-hooks-library';
+
+const Modal = () => {
+  // If no ref argument, this hook locks body.
+  useScrollLock();
+
+  return <div>modal</div>;
+};
+```
