@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/gusrb3164/react-custom-hooks#readme",
   "peerDependencies": {
-    "react": "^17.0.2"
+    "react": "^16.11.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.5",
