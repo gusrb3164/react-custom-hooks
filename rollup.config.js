@@ -3,7 +3,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
-const extensions = ['.js', '.jsx', '.ts', '.tsx']; // 어떤 확장자를 처리 할 지 정함
+const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 export default {
   input: './src/index.ts', // 어떤 파일부터 불러올지 정함.
